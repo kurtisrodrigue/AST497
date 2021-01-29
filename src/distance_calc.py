@@ -9,7 +9,7 @@ def calc_sep(ob1, ob2):
     return c1.separation(c2)
 
 #parse
-data_file = 'data/O_Stars.txt'
+data_file = '../data/O_Stars.txt'
 
 # read and convert coordinates to proper form for astropy
 with open(data_file, 'r') as f:
@@ -42,7 +42,7 @@ for obj1 in obj_list:
     print(counter)
 
 #output to a text file
-with open('neighbor_counts.txt', 'w') as f:
+with open('../data/neighbor_counts.txt', 'w') as f:
     for obj in neighbor_counts:
         f.write(obj[0] + ': ' + obj[1])
 
