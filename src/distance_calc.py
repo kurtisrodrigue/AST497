@@ -44,5 +44,6 @@ for obj1 in obj_list:
 #output to a text file
 with open('../data/neighbor_counts.txt', 'w') as f:
     for obj in neighbor_counts:
-        f.write(obj[0] + ': ' + obj[1])
+        f.write(str(obj[0]) + ': ' + str(obj[1]) + '\n')
+
 

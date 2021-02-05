@@ -41,10 +41,10 @@ fig = plt.figure()
 ax1 = fig.add_subplot(111)
 ax1.set_ylabel('Magnitude')
 ax1.set_xlabel('Spectral Type')
-x = np.array([1,2,3,4,5,6,7])
-y = np.array([-30,-20,-10,0,10,20,30])
-my_xticks = ['O', 'B', 'A', 'F', 'G', 'K', 'M']
-my_yticks = [-30, -20, -10, 0, 10, 20, 30]
+x = np.array([1,2,3,4,5,6])
+y = np.array([-10,-5,0,5,10,15])
+my_xticks = ['B', 'A', 'F', 'G', 'K', 'M']
+my_yticks = [15, 10, 5, 0, -5, -10]
 plt.plot(x,y)
 plt.xticks(x, my_xticks)
 plt.yticks(y, my_yticks)
