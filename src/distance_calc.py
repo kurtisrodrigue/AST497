@@ -3,7 +3,6 @@ from astropy.coordinates import Angle
 
 # calculate angular separation between two sets of coordinates
 def calc_sep(ob1, ob2):
-    Angle(ob1[0] + ' degrees')
     c1 = SkyCoord(Angle(ob1[0] + ' degrees'), Angle(ob1[1] + ' degrees'))
     c2 = SkyCoord(Angle(ob2[0] + ' degrees'), Angle(ob2[1] + ' degrees'))
     return c1.separation(c2)
